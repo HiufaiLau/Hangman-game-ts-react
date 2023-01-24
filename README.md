@@ -1,2 +1,2 @@
 ﻿# Hangman-game 
-## with Typescrit 
+## with Typescript 
