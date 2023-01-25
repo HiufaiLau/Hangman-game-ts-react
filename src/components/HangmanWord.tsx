@@ -5,6 +5,8 @@ type HangmanWordProps = {
 };
 
 export function HangmanWord({
+  // const word ="test";
+  // const guessedLetters =["t","g","e"];
   guessedLetters,
   wordToGuess,
   reveal = false,
@@ -13,6 +15,7 @@ export function HangmanWord({
     <div
       style={{
         display: "flex",
+        width: "100%",
         gap: ".25em",
         fontSize: "6rem",
         fontWeight: "bold",
@@ -20,7 +23,9 @@ export function HangmanWord({
         fontFamily: "monospace",
       }}
     >
+      {/* display the letters one by one individually */}
       {wordToGuess.split("").map((letter, index) => (
+        // key is the identifier for each letter of the word
         <span style={{ borderBottom: ".1em solid black" }} key={index}>
           <span
             style={{
