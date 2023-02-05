@@ -15,6 +15,7 @@ export function HangmanWord({
     <div
       style={{
         display: "flex",
+        justifyContent: "center",
         width: "100%",
         gap: ".25em",
         fontSize: "6rem",
