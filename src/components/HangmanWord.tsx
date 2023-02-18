@@ -18,7 +18,7 @@ export function HangmanWord({
         justifyContent: "center",
         width: "100%",
         gap: ".25em",
-        fontSize: "3rem",
+        fontSize: "3.5rem",
         fontWeight: "bold",
         textTransform: "uppercase",
         fontFamily: "monospace",
