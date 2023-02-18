@@ -1,5 +1,5 @@
 {
-  "homepage": "https://hiufailau.github.io/Hangman-game-ts",
+  "homepage": ".",
   "name": "hangman",
   "private": true,
   "version": "0.0.0",
@@ -9,10 +9,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "dependencies": {
-    "build": "^0.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
