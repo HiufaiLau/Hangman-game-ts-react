@@ -1,0 +1,93 @@
+.hangman-drawing {
+  position: relative;
+
+  @media (max-width: 640px) {
+    scale: 0.6;
+  }
+
+  .hangman-body-part {
+    position: absolute;
+    background: black;
+
+    &.head {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: 10px solid black;
+      top: 50px;
+      right: -30px;
+    }
+
+    &.body {
+      width: 10px;
+      height: 100px;
+      top: 120px;
+      right: 0;
+    }
+
+    &.right-arm {
+      width: 100px;
+      height: 10px;
+      top: 150px;
+      right: -100px;
+      rotate: -30deg;
+      transform-origin: left bottom;
+    }
+
+    &.left-arm {
+      width: 100px;
+      height: 10px;
+      top: 150px;
+      right: 10px;
+      rotate: 30deg;
+      transform-origin: right bottom;
+    }
+
+    &.right-leg {
+      width: 100px;
+      height: 10px;
+      top: 210px;
+      right: -90px;
+      rotate: 60deg;
+      transform-origin: left bottom;
+    }
+
+    &.left-leg {
+      width: 100px;
+      height: 10px;
+      top: 210px;
+      right: 0;
+      rotate: -60deg;
+      transform-origin: right bottom;
+    }
+  }
+
+  .hangman-background {
+    height: 50px;
+    width: 10px;
+    background: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .hangman-base {
+    height: 10px;
+    width: 200px;
+    background: black;
+    margin-left: 120px;
+  }
+
+  .hangman-rope {
+    height: 400px;
+    width: 10px;
+    background: black;
+    margin-left: 120px;
+  }
+
+  .hangman-ground {
+    height: 10px;
+    width: 250px;
+    background: black;
+  }
+}
