@@ -1,4 +1,4 @@
 ﻿# Hangman-game 
-Live demo: https://simple-hangman.com/
+Live demo: https://hangman-game-hiu.vercel.app/
 
 ## with Typescript and React
