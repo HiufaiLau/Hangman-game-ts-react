@@ -10,18 +10,18 @@
 
   span {
     border-bottom: 0.1em solid black;
-  }
 
-  span.visible {
-    visibility: visible;
-    color: black;
-  }
+    &.visible {
+      visibility: visible;
+      color: black;
+    }
 
-  span.hidden {
-    visibility: hidden;
-  }
+    &.hidden {
+      visibility: hidden;
+    }
 
-  span.hidden.reveal {
-    color: red;
+    &.hidden.reveal {
+      color: red;
+    }
   }
 }
