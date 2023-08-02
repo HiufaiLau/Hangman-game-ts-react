@@ -1,4 +1,5 @@
-import '../styles/main.scss';
+import React from "react";
+import "../styles/main.scss";
 
 const HEAD = <div className='hangman-body-part head' />;
 
@@ -21,7 +22,9 @@ type HangmanDrawingProps = {
 export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
   return (
     <div className='hangman-drawing'>
-      {BODY_PARTS.slice(0, numberOfGuesses)}
+      {BODY_PARTS.slice(0, numberOfGuesses).map((bodyPart, index) => (
+        <React.Fragment key={index}>{bodyPart}</React.Fragment>
+      ))}
       <div className='hangman-background' />
       <div className='hangman-base' />
       <div className='hangman-rope' />
